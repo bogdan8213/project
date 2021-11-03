@@ -4,14 +4,24 @@ let words = [{
   variants: ['и', 'е'],
   correct: 'и'
 }, {
-  text: 'Б..чёвка2',
-  variants: ['и', 'е', 'у', 'd'],
-  correct: 'и'
+  text: 'крыж..вник',
+  variants: ['о', 'е', 'ё'],
+  correct: 'ё'
 }, {
-  text: 'Б..чёвка3',
-  variants: ['и', 'е', 'г'],
-  correct: 'и'
-}];
+  text: 'ш..пот',
+  variants: ['о', 'ё'],
+  correct: 'ё'
+},
+  {
+    text: 'реш..тка',
+    variants: ['о', 'ё'],
+    correct: 'ё'
+},
+  {
+    text: 'кап..шон',
+    variants: ['е', 'ю'],
+    correct: 'ю'
+  }];
 
 const $wordText = document.getElementById('word-text');
 const $wordsCount = document.getElementById('words-count');

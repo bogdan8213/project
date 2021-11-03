@@ -4,7 +4,40 @@ p{
 }
 
 button{
-    width:100px;
-    height:100px;
-    font-size:25px;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f50b46;
+    padding: 25px 30px;
+    border: none;
+    color: #e4e4e4;
+    font-size: 23px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 85px;
+}
+
+.singkapvo-gesionalem span {
+    position: relative;
+    pointer-events: none;
+}
+
+.singkapvo-gesionalem::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #4510dc, rgba(255, 255, 255, 0));
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: width .1s ease, height .3s ease;
+}
+
+.singkapvo-gesionalem:hover::before {
+    --size: 397px;
 }
