@@ -19,12 +19,12 @@ button{
     border-radius: 85px;
 }
 
-.singkapvo-gesionalem span {
+button span {
     position: relative;
     pointer-events: none;
 }
 
-.singkapvo-gesionalem::before {
+button::before {
     --size: 0;
     content: '';
     position: absolute;
@@ -38,6 +38,6 @@ button{
     transition: width .1s ease, height .3s ease;
 }
 
-.singkapvo-gesionalem:hover::before {
+button:hover::before {
     --size: 397px;
 }
