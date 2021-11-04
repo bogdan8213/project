@@ -1,0 +1,21 @@
+[{
+  "text": "Б..чёвка",
+  "variants": ["и", "е"],
+  "correct": "и"
+}, {
+  "text": "крыж..вник",
+  "variants": ["о", "е", "ё"],
+  "correct": "ё"
+}, {
+  "text": "ш..пот",
+  "variants": ["о", "ё"],
+  "correct": "ё"
+}, {
+  "text": "реш..тка",
+  "variants": ["о", "ё"],
+  "correct": "ё"
+}, {
+  "text": "кап..шон",
+  "variants": ["е", "ю"],
+  "correct": "ю"
+}]

@@ -1,33 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="index.css" rel="stylesheet">
+  <!-- Обязательные метатеги -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="index.css" rel="stylesheet">
 
+  <title>Тренажёр исключений</title>
 </head>
 <body>
 
-<p>Тренажёр исключений по русскому языку</p>
-<p>Всего слов: <span id="words-count"></span></p>
-<p id="word-text"></p>
+<header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                </svg>
+                &nbsp;<strong> Тренажёр исключений</strong>
+            </a>
+            <div class="col-md-3 text-end">
+                <h6>Всего слов <span class="badge bg-primary" >5</span></h6>
+                <h6>Пройдено <span class="badge bg-success" id="words-count">0</span></h6>
+                <h6>Ошибок <span class="badge bg-danger">0</span></h6>
+            </div>
+        </div>
+    </div>
+</header>
 
-<div id="word-variants">
-
+<div class="container-sm">
+    <div class="word-card card mb-4 rounded-3 shadow-sm text-center">
+        <div class="card-header py-3">
+            <h4 id="word-text"></h4>
+        </div>
+        <div class="card-body">
+            <div class="col-md" id="word-variants"></div>
+        </div>
+    </div>
 </div>
 
 
-
-</body>
-
 <script src="index.js"></script>
-<script>
-    document.querySelector('.button').onmousemove = function (e) {
-        let x = e.pageX - e.target.offsetLeft;
-        let y = e.pageY - e.target.offsetTop;
-        e.target.style.setProperty('--x', x + 'px');
-        e.target.style.setProperty('--y', y + 'px');
-    };
-</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
 </html>
